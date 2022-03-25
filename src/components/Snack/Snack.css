@@ -3,10 +3,27 @@
     height:500px;
     border:1px solid lightgrey;
     border-radius: 8px;
+    position:relative;
 }
 .card img{
     width: 285px;
     height:285px;
     border-radius: 8px;
     margin:7px;
+}
+.card-info{
+    margin:7px;
+}
+.btn{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    padding:1px 12px;
+    width:150px;
+    border:none;
+    background-color: goldenrod;
+    position:absolute;
+    bottom: 20px;
+    right:7px;
 }
