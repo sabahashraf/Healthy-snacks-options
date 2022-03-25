@@ -15,8 +15,20 @@ const Container = () => {
     const handleAddToCart=snack=>{
        
         const newCart=[...cart,snack];
-        console.log(newCart);
-        setCart(newCart);
+        if(newCart.length <=4){
+            setCart(newCart);
+        }
+        else{
+            alert('sorry you cannot choose more than four items');
+        }
+        
+       
+    }
+    const chooseOne=cart=>{
+        console.log(cart);
+        const random = Math.floor((Math.random() * 4) + 1);
+        
+
     }
     return (
         <div>
@@ -39,6 +51,7 @@ const Container = () => {
                             key={item.id}></Cart>)
                            
                     }
+                     <button onClick={()=>chooseOne(cart)}className='btn-choose'>Choose 1 for me</button>
                 </div>
             </div>
         </div>
