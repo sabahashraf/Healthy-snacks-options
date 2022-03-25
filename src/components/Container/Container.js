@@ -30,7 +30,7 @@ const Container = () => {
     const chooseOne=cart=>{
       console.log(cart);
         
-        const random = Math.floor((Math.random() * 3) + 1);
+        const random = Math.floor((Math.random() * cart.length-1) + 1);
 
      
       setCart([cart[random]]);
@@ -61,7 +61,7 @@ const Container = () => {
                             key={item.id}></Cart>)
                            
                     }
-                     <button onClick={()=>chooseOne(cart)}className='btn-choose'>Choose 1 for me</button>
+                     <button onClick={()=>chooseOne(cart)}className='btn-choose'style={{marginBottom:'20px',marginTop:'50px'}}>Choose 1 for me</button>
                      <button onClick={()=>chooseAgain(cart)}className='btn-choose'>Choose Again</button>
                 </div>
             </div>

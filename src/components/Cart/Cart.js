@@ -11,6 +11,7 @@ const Cart = (props) => {
             <img src={img} alt=''></img>
             <h4>{name}</h4>
             </div>
+            
            
 
         </div>
