@@ -1,10 +1,11 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Container from './components/Container/Container';
 
 function App() {
   return (
     <div >
-    <h1>Hellooo</h1>
+    <Container></Container>
     </div>
   );
 }

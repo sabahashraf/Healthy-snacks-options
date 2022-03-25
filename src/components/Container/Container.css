@@ -1,0 +1,18 @@
+
+h1{
+   text-align: center;
+}
+
+.container{
+    display:flex;
+}
+.snacks-container{
+    flex:1;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    margin:30px;
+}
+.cart-container{
+    flex: 0 0 20%;
+    margin: 30px;
+}
