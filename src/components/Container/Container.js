@@ -13,8 +13,11 @@ const Container = () => {
         
     },[])
     const handleAddToCart=snack=>{
+
+       
        
         const newCart=[...cart,snack];
+
         if(newCart.length <=4){
             setCart(newCart);
         }
@@ -25,10 +28,17 @@ const Container = () => {
        
     }
     const chooseOne=cart=>{
-        console.log(cart);
-        const random = Math.floor((Math.random() * 4) + 1);
+      console.log(cart);
+        
+        const random = Math.floor((Math.random() * 3) + 1);
+
+     
+      setCart([cart[random]]);
         
 
+    }
+    const chooseAgain=cart=>{
+        setCart([]);
     }
     return (
         <div>
@@ -52,6 +62,7 @@ const Container = () => {
                            
                     }
                      <button onClick={()=>chooseOne(cart)}className='btn-choose'>Choose 1 for me</button>
+                     <button onClick={()=>chooseAgain(cart)}className='btn-choose'>Choose Again</button>
                 </div>
             </div>
         </div>
