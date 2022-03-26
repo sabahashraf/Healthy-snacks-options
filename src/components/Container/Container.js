@@ -40,6 +40,7 @@ const Container = () => {
     const chooseAgain=cart=>{
         setCart([]);
     }
+   
     return (
         <div>
             <h1>Healthy Snacks Options</h1>
@@ -58,7 +59,8 @@ const Container = () => {
                     {
                         cart.map(item=><Cart
                             cart={item}
-                            key={item.id}></Cart>)
+                            key={item.id}
+                            ></Cart>)
                            
                     }
                      <button onClick={()=>chooseOne(cart)}className='btn-choose'style={{marginBottom:'20px',marginTop:'50px'}}>Choose 1 for me</button>

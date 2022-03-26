@@ -10,7 +10,7 @@ const Snack = (props) => {
         <div className='card'>
             <img src={img} alt=''></img>
             <div className='card-info'>
-            <h3>{name}</h3>
+            <h4>{name}</h4>
             <p>Price:{price}/lb</p>
             </div>
             <button onClick={()=>{handleAddToCart(snack)}}className='btn'><p style={{marginRight:'7px'}}>Add to cart</p>
