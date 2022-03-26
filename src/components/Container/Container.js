@@ -28,7 +28,7 @@ const Container = () => {
        
     }
     const chooseOne=cart=>{
-      console.log(cart);
+      
         
         const random = Math.floor((Math.random() * cart.length-1) + 1);
 
