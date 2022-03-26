@@ -1,6 +1,6 @@
 # Project name
 
-Healthy Snacks Options
+Lucky One
 
 ## Project Live link
 
