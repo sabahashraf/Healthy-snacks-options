@@ -1,6 +1,6 @@
 # Project name
 
-Lucky One
+Lucky One Selector
 
 ## Project Live link
 
